@@ -1,0 +1,150 @@
+<!DOCTYPE html">
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../static/css/style.css">
+    <title>Création d'un design étape par étape - Etape n°1 : Le code XHTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        #conteneur {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        #header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        #menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        #menu li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        #menu li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        #contenu {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        #footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Notre Application</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <!-- <a class="nav-link active" href="#">Home -->
+                  <a class="nav-link" href="/magasin/"> Magasin</a>
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blog/"> BLog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/jeux">Jeux</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </li>
+            </ul> -->
+           
+           
+            <form class="d-flex">
+              <input class="form-control me-sm-2" type="search" placeholder="Search">
+              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">Connexion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'register' %}">S'inscrire</a>
+          </li>
+        </ul>
+      </nav>
+
+    <div id="conteneur">
+        <!-- <h1 id="header"><a href="#" title="Colored Design - Accueil"><span>Colored Design</span></a></h1>
+        
+        <nav>
+            <ul id="menu">
+                <li><a href="/magasin">Application n°1 : Magasin</a></li>
+                <li><a href="/blog">Application n°2: Blog</a></li>
+                <li><a href="#">Application n°3</a></li>
+            </ul>
+        </nav> -->
+
+       
+        <div id="contenu">
+            <div class="section1">
+                <h2>Bienvenue sur notre site</h2>
+                <p>Notre site est une plateforme regroupant plusieurs applications qui vous permettent de profiter de diverses fonctionnalités.</p>
+          
+            </div>
+            <div class="cardglo">
+          <div class="card">
+              <span>01</span>
+              <h3>Application Magasin</h3>
+              <p>Explorez notre application Magasin pour découvrir une variété étendue de produits disponibles à l'achat. Que vous soyez à la recherche de vêtements, d'accessoires ou d'articles ménagers, notre application Magasin répondra à vos besoins avec une sélection complète.</p>
+          </div>
+          <div class="card">
+            <span>02</span>
+            <h3>Application Jeux</h3>
+            <p>L'application Jeux vous propose une collection divertissante de jeux interactifs. Que vous soyez amateur de puzzles, de jeux de stratégie ou de jeux d'aventure, notre application Jeux vous garantit des heures de plaisir.</p>
+        </div>
+
+   
+    </div>
+
+
+</body>
+</html>
